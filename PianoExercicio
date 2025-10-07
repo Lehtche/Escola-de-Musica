@@ -1,0 +1,39 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package com.mycompany.escolamusical1;
+
+/**
+ *
+ * @author leticia
+ */
+public class PianoExercicio extends InstrumentoMusical {
+    private int numeroTeclas;
+    
+    public PianoExercicio(String nome, String material, int numeroTeclas){
+        super(nome,material);
+        this.numeroTeclas = numeroTeclas;
+}
+ 
+  @Override 
+public void tocar(){
+    System.out.println("tocando");
+}
+ @Override 
+public void afinar(){
+    super.afinar();
+    System.out.println("afinando");
+}
+
+ @Override 
+public void mostrarInformacoes(){
+    System.out.println("informaçoes piano");
+}
+
+public int getnumeroTeclas() { return numeroTeclas;}
+}
+
+
+    
