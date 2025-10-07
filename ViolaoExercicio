@@ -19,11 +19,11 @@ public class ViolaoExercicio extends InstrumentoMusical {
 }
   @Override 
 public void tocar(){
-    System.out.println("tocando");
+    System.out.println("tocando"+nome);
 }
  @Override 
 public void afinar(){
-    System.out.println("afinando");
+    System.out.println("afinando"+nome);
 }
 
  @Override 
